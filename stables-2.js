@@ -53,7 +53,7 @@ const horses = [
   {
     name: "JangoFettsHead",
     nickname: "Jango",
-    favoriteTreat: "chneese",
+    favoriteTreat: "bluechneese",
     age: 9,
     monthlyRent: 8000,
     isInside: true,
@@ -128,7 +128,7 @@ console.log(getNickname(horses[1])); // log the return value (array) outside
 
 // horses.push(newObject)
 // horses[0].property
-// horses.forEach(h => h.newProp = true)
+// horses.forEach(h => h.newProperty = true)
 
 //*wushi finger hold*
 //skadoosh
