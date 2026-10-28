@@ -97,8 +97,13 @@ horses.push(newHorse);
 horses.forEach(horse => {
   horse.isHungry = true;
 });
+// now horse always hungry
+
+// output vv
 
 const totalStalls = 8;
+
+//
 
 function logAvailableStalls() {
   const available = totalStalls - horses.length;
@@ -106,18 +111,24 @@ function logAvailableStalls() {
 }
 logAvailableStalls();
 
+//
+
 function logLateRent(horse) {
   const lateAmount = horse.monthlyRent * 1.2;
   console.log(horse.name + " owes $" + lateAmount + " if rent is paid late.");
 }
 logLateRent(horses[1]);
 
-// Function that returns (does not log) the nickname of a chosen horse
+
+// Function that returns (not log/update) nickname of said horse
 function getNickname(horse) {
   return horse.nickname;
 }
-console.log(getNickname(horses[1])); // log the return value outside
+console.log(getNickname(horses[1])); // log the return value (array) outside
 
 // horses.push(newObject)
 // horses[0].property
 // horses.forEach(h => h.newProp = true)
+
+//*wushi finger hold*
+//skadoosh
