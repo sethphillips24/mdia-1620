@@ -1,47 +1,3 @@
-// Welcome!
-//
-//                                                  #    #
-//                                             %%% ##   ##
-//                                          %%%%% ###%🎀###
-//                                         %%%%% ### %%% #
-//                                       %%%%%% ### %%% ###
-//                                        %%%% ## %% #######
-//                                       %%%%% # %% #@#####
-//                                     %%%%%% # % #########
-//                                    %%%%% ##### #########
-//                          ###        %% ####### #########
-//                 %%% ############    ########### ########
-//              %%%% ############################### #######
-//            %%%%% ################################## ######
-//          %%%%%% #################################### #C###
-//         %%%🌸%% #####################################  ###
-//         %%%%% #######################################
-//        %%%%%% ############### BORG ##################
-//     % %%%%%%% ############### BORG ##################
-//      %%%%%%%%% ############## BORG ##################
-//     %%%%%%%%%% ########################################
-//  %%% %%%%%%%%   ###### ################################
-//    %%%%%%%%      ###### #################### ##########
-// % %%%🌸%%%%        ####### ########### ###### ##########
-//  %%%%%%%%%         #######  ########### ###### ########
-// %%%%%%%%%%          ##### ###  ######### ####### ######
-//  %%%%%%%%%%          #### ##               ####### ####
-//  %🌸%%%%%%%%%           ## #                  ##### ###
-//   %%  %% % %%         # ##                      ## ###
-//     %   %    %        # ##                      # ###
-//                        # ###                     ## ###
-//                        # ###                     ## ###
-//                        # ####                   #### ##
-//                       ### ###                  ##### ###
-//                      ####  ###                 ####   ##
-//                     #####   ###                 ##    ##
-//                    #####    ####                      ###
-//                     ##        ###                     ###
-//                                ####                     ##
-//                                 ####                    ###
-//                                                         ####
-//                                                          ##
-
 //------------------------- (Assignment 2) -------------------------//
 // Seth Phillips A01306781
 
@@ -105,11 +61,20 @@ const totalStalls = 8;
 
 //
 
-function logAvailableStalls() {
-  const available = totalStalls - horses.length;
+//function logAvailableStalls() {
+//  const available = totalStalls - horses.length;
+//  console.log("Available stalls: " + available);
+//}
+//logAvailableStalls();
+
+function stallsAvailable(totalStalls, numHorses) {
+  const available = totalStalls - numHorses;
   console.log("Available stalls: " + available);
 }
-logAvailableStalls();
+
+stallsAvailable(25, 13);                       // any value. would be room for 12
+stallsAvailable(8, horses.length);             // horses.length is 4 horses. number compounded against horses in array
+stallsAvailable(totalStalls, horses.length);   // w/ variables
 
 //
 
@@ -119,16 +84,27 @@ function logLateRent(horse) {
 }
 logLateRent(horses[1]);
 
+function getNickname(horse) {
+  console.log(horse.nickname);
+}
+getNickname(horses[0]);
+
 
 // Function that returns (not log/update) nickname of said horse
-function getNickname(horse) {
-  return horse.nickname;
-}
-console.log(getNickname(horses[1])); // log the return value (array) outside
+//function getNickname(horse) {
+//  return horse.nickname;
+//}
+//console.log(getNickname(horses[1])); // log return value (array) outside
 
 // horses.push(newObject)
 // horses[0].property
+
 // horses.forEach(h => h.newProperty = true)
+
+// vv rem 0 is the array position
+// for (let i = 0; i < horses.length; i++) {
+//  horses[i].isHungry = true;
+//}
 
 //*wushi finger hold*
 //skadoosh
