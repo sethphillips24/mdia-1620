@@ -72,9 +72,9 @@ function stallsAvailable(totalStalls, numHorses) {
   console.log("Available stalls: " + available);
 }
 
-stallsAvailable(25, 13);                       // any value. would be room for 12
-stallsAvailable(8, horses.length);             // horses.length is 4 horses. number compounded against horses in array
-stallsAvailable(totalStalls, horses.length);   // w/ variables
+// stallsAvailable(25, 13);                       // any value. would be room for 12
+// stallsAvailable(8, horses.length);             // horses.length is 4 horses. number compounded against horses in array
+stallsAvailable(totalStalls, horses.length);   // active, w/ variables
 
 //
 
@@ -87,7 +87,7 @@ logLateRent(horses[1]);
 function getNickname(horse) {
   console.log(horse.nickname);
 }
-getNickname(horses[0]);
+getNickname(horses[1]);
 
 
 // Function that returns (not log/update) nickname of said horse
